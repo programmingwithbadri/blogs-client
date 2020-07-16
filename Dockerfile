@@ -1,6 +1,9 @@
 # Base image
 FROM node:alpine 
 
+# Minor bug fix specified only for react app
+ENV CI=true
+
 # Working directory
 WORKDIR /app
 
